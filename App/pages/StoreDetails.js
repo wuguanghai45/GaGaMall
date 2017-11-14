@@ -220,12 +220,9 @@ class StoreDetails extends Component {
      return (
        <View style={{height:48,backgroundColor:'black',flexDirection:'row'}}>
                 <View style={{width:48,height:48,justifyContent:'center'}}>
-                     <TouchableOpacity onPress={() => {this.buttonBackAction()}} style={{justifyContent:'center',alignItems:'center'}} >
-                           <Image 
-                                 style={{width:13,height:20}}
-                                 source={require('../imgs/ic_center_back.png')}
-                           />
-                     </TouchableOpacity>
+                   <TouchableOpacity onPress={() => {this.buttonBackAction()}} style={{justifyContent:'center',alignItems:'center'}} >
+                       <Image style={{width:13,height:20}} source={require('../imgs/ic_center_back.png')} />
+                   </TouchableOpacity>
                 </View>
                 <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
                      <Text style={{color:'white',fontSize:18}}>商品列表</Text>
@@ -296,11 +293,9 @@ class StoreDetails extends Component {
     return (
        <View style={{flex:1}}>
          <View>
+          { this.renderTopLayout() }
           {
-            this.renderTopLayout()
-          }
-          {
-            this.renderStoreBaisc()
+           //this.renderStoreBaisc()
           }
         </View>
         {
