@@ -6,5 +6,5 @@ React Native开发嘎嘎商城客户端-来自[江清清的技术专栏](http://
 
 ##
 [原版](https://github.com/gagakj/GaGaMall)
-## 因为原作者
+
 因为原作者没有维护， 自己从头写有些麻烦。所以在原版基础上进行升级，把react native 的壳升级到0.49.5
