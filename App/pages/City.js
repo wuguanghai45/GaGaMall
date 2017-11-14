@@ -61,8 +61,7 @@ class City extends React.Component {
   } 
     //返回
   buttonBackAction(){
-      const {navigator} = this.props;
-      return NaviGoBack(navigator);
+    this.props.navigation.goBack();
   }
   onEndReached(typeId) {
      

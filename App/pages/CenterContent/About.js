@@ -20,6 +20,7 @@ class About extends React.Component {
   }
     //返回
   buttonBackAction(){
+    this.props.navigation.goBack();
   }
   render() {
     return (

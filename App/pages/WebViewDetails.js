@@ -30,7 +30,7 @@ class WebViewDetails extends Component {
       this.webview.goBack();
       return true;
     }
-    return NaviGoBack(this.props.navigator);
+    this.props.navigation.goBack();
   }
   onNavigationStateChange(navState) {
     canGoBack = navState.canGoBack;

@@ -28,14 +28,13 @@ class ShareToFriend extends Component {
   }
   //返回
   buttonBackAction(){
-      const {navigator} = this.props;
       if (this.state.isShareModal) {
           this.setState({
              isShareModal: false
          });
       return true;
      }
-      return NaviGoBack(navigator);
+    this.props.navigation.goBack();
   }
   //其他分享方式
   buttonOtherShare(){

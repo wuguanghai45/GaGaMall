@@ -46,8 +46,7 @@ class Login extends Component {
 }
   //返回
   buttonBackAction(){
-      const {navigator} = this.props;
-      return NaviGoBack(navigator);
+    this.props.navigation.goBack();
   }
   //用户登录/注册
   buttonRegisterOrLoginAction(position){

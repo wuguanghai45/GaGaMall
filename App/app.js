@@ -83,16 +83,12 @@ const AppRoot = StackNavigator({
   ResetPwd: { screen: ResetPwd },
   Setting: { screen: Setting },
   ShareToFriend: { screen: ShareToFriend },
+}, {
+  headerMode: 'none',
 });
-
-//import { NaviGoBack } from './utils/CommonUtils';
-
-//import { registerApp } from 'react-native-wechat';
 
 export const STATUS_BAR_HEIGHT = (Platform.OS === 'ios' ? 20 : 25)
 export const ABOVE_LOLIPOP = Platform.Version && Platform.Version > 19
-
-//var _navigator;
 
 class App extends React.Component {
   constructor(props) {

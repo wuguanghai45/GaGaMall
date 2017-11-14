@@ -36,15 +36,14 @@ let checked = -1;
 class Prepaid extends Component {
   constructor(props) {
       super(props);
-      this.buttonBackAction=this.buttonBackAction.bind(this);    
+      this.buttonBackAction=this.buttonBackAction.bind(this);
       this.renderItem=this.renderItem.bind(this);
       this.buttonItem=this.buttonItem.bind(this);
       this.submitPay=this.submitPay.bind(this);
   }
   //返回
   buttonBackAction(){
-      const {navigator} = this.props;
-      return NaviGoBack(navigator);
+    this.props.navigation.goBack()
   }
   buttonItem(rowData){
       const {navigator} = this.props;
@@ -52,7 +51,7 @@ class Prepaid extends Component {
       console.log('rowData:'+rowData);
       if(rowData === (tempTypeIds.length-1)){
          //点击了自定义金额,进行打开Modal
-         
+
       }else{
          //选中部分金额
       }
