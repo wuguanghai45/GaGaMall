@@ -7,12 +7,12 @@ import App from './app'
 const store = configureStore();
 
 class rootApp extends Component {
-	render() {
-		return (
-			<Provider store={store}>
-               <App/>
-            </Provider>
-		   )
-	}
+  render() {
+    return (
+      <Provider store={store}>
+        <App/>
+      </Provider>
+    )
+  }
 }
 export default rootApp;
